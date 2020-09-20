@@ -10,13 +10,15 @@
   <name>PageObjectGitHubProject</name>
   <url>http://maven.apache.org</url>
 
-
+  
+  
   <dependencies>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <scope>test</scope>
+  
     </dependency>
  
 		<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
@@ -86,7 +88,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.1.0</version>
-
 		</dependency>
 
 		

@@ -1,0 +1,87 @@
+# Created at 2020-09-18T22:33:50.723
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (6800@user-PC):
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:178)
+        at org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:649)
+        at org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
+        at org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:340)
+        at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:423)
+        at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:435)
+        at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
+        at java.lang.Thread.run(Thread.java:748)
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.lang.Object.wait(Native Method)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+        at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+"Reference Handler" 
+   java.lang.Thread.State: WAITING
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+        at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.lang.ClassLoader.findBootstrapClass(Native Method)
+        at java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1015)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:413)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+        at java.lang.Class.getDeclaredMethods0(Native Method)
+        at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+        at java.lang.Class.privateGetMethodRecursive(Class.java:3048)
+        at java.lang.Class.getMethod0(Class.java:3018)
+        at java.lang.Class.getMethod(Class.java:1784)
+        at org.apache.xmlbeans.XmlBeans.buildMethod(XmlBeans.java:178)
+        at org.apache.xmlbeans.XmlBeans.buildNodeMethod(XmlBeans.java:199)
+        at org.apache.xmlbeans.XmlBeans.buildNodeToCursorMethod(XmlBeans.java:236)
+        at org.apache.xmlbeans.XmlBeans.<clinit>(XmlBeans.java:135)
+        at org.openxmlformats.schemas.drawingml.x2006.main.ThemeDocument$Factory.getTypeLoader(Unknown Source)
+        at org.openxmlformats.schemas.drawingml.x2006.main.ThemeDocument$Factory.parse(Unknown Source)
+        at org.apache.poi.xssf.model.ThemesTable.<init>(ThemesTable.java:86)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at org.apache.poi.xssf.usermodel.XSSFFactory.createDocumentPart(XSSFFactory.java:56)
+        at org.apache.poi.ooxml.POIXMLFactory.createDocumentPart(POIXMLFactory.java:63)
+        at org.apache.poi.ooxml.POIXMLDocumentPart.read(POIXMLDocumentPart.java:657)
+        at org.apache.poi.ooxml.POIXMLDocument.load(POIXMLDocument.java:180)
+        at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:282)
+        at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:303)
+        at com.w2a.Utilites.ExcelReader.<init>(ExcelReader.java:36)
+        at com.w2a.base.PageClass.<clinit>(PageClass.java:40)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at java.lang.Class.newInstance(Class.java:442)
+        at org.testng.internal.InstanceCreator.newInstance(InstanceCreator.java:30)
+        at org.testng.TestNG.addListeners(TestNG.java:944)
+        at org.testng.TestNG.initializeConfiguration(TestNG.java:904)
+        at org.testng.TestNG.initializeEverything(TestNG.java:988)
+        at org.testng.TestNG.run(TestNG.java:999)
+        at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+        at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+        at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+
+

@@ -27,7 +27,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.Utilites.*;
 
-
+import org.apache.commons.io.FileUtils;
 
 public class PageClass {
 

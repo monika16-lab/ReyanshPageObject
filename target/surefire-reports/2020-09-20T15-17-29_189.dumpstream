@@ -1,0 +1,4 @@
+# Created at 2020-09-20T15:17:30.857
+Boot Manifest-JAR contains absolute paths in classpath 'E:\UDEMY\GitHubRepository\PageObjectGitHubProject\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
